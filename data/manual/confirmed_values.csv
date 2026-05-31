@@ -1,0 +1,191 @@
+article_id,carrier,plan_bucket,plan_name,new_amount,mnp_amount,memo
+256,hello,7GB,manual_image_confirmed,30000,200000,2025-01-01 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+256,hello,11GB,manual_image_confirmed,30000,70000,2025-01-01 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+256,ktm,7GB,manual_image_confirmed,40000,130000,2025-01-01 image: M 스페셜 7GB 내국인 010신규/MNP
+256,ktm,11GB,manual_image_confirmed,40000,110000,2025-01-01 image: M 프리미엄 11GB 내국인 010신규/MNP
+256,sk7,7GB,manual_image_confirmed,20000,150000,2025-01-01 image: LTE 알뜰 7GB 내국인 010신규/MNP
+256,sk7,11GB,manual_image_confirmed,20000,170000,2025-01-01 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+256,umobile,7GB,manual_image_confirmed,22000,153000,2025-01-01 image: LTE USIM 7GB+ 내국인 010신규/MNP
+256,umobile,11GB,manual_image_confirmed,22000,175000,2025-01-01 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+257,umobile,7GB,manual_image_confirmed,44000,153000,2025-01-02 image: LTE USIM 7GB+ 내국인 010신규/MNP
+257,umobile,11GB,manual_image_confirmed,44000,175000,2025-01-02 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+258,umobile,7GB,manual_image_confirmed,44000,153000,2025-01-03 image: LTE USIM 7GB+ 내국인 010신규/MNP
+258,umobile,11GB,manual_image_confirmed,44000,175000,2025-01-03 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+264,sk7,7GB,manual_image_confirmed,50000,110000,2025-01-17 2-4차 image: LTE 알뜰 7GB 내국인 010신규/MNP
+264,sk7,11GB,manual_image_confirmed,50000,150000,2025-01-17 2-4차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+265,hello,7GB,manual_image_confirmed,30000,120000,2025-01-17 2-5차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+265,hello,11GB,manual_image_confirmed,30000,70000,2025-01-17 2-5차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+265,sk7,7GB,manual_image_confirmed,50000,110000,2025-01-17 2-5차 image: LTE 알뜰 7GB 내국인 010신규/MNP
+265,sk7,11GB,manual_image_confirmed,50000,150000,2025-01-17 2-5차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+265,umobile,7GB,manual_image_confirmed,44000,132000,2025-01-17 2-5차 image: LTE USIM 7GB+ 내국인 010신규/MNP
+265,umobile,11GB,manual_image_confirmed,44000,154000,2025-01-17 2-5차 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+266,sk7,7GB,manual_image_confirmed,50000,110000,2025-01-17 2-6차 image: LTE 알뜰 7GB 내국인 010신규/MNP
+266,sk7,11GB,manual_image_confirmed,50000,150000,2025-01-17 2-6차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+267,hello,7GB,manual_image_confirmed,30000,140000,2025-01-18 2-7차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+267,hello,11GB,manual_image_confirmed,30000,70000,2025-01-18 2-7차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+267,sk7,7GB,manual_image_confirmed,50000,170000,2025-01-18 2-7차 image: LTE 알뜰 7GB 내국인 010신규/MNP
+267,sk7,11GB,manual_image_confirmed,50000,190000,2025-01-18 2-7차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+268,hello,7GB,manual_image_confirmed,30000,140000,2025-01-18 2-8차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+268,hello,11GB,manual_image_confirmed,30000,70000,2025-01-18 2-8차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+269,hello,7GB,manual_image_confirmed,30000,140000,2025-01-23 2-9차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+269,hello,11GB,manual_image_confirmed,30000,70000,2025-01-23 2-9차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+270,ktm,7GB,manual_image_confirmed,40000,80000,2025-01-24 3차 image: M 스페셜 7GB 내국인 010신규/MNP
+270,ktm,11GB,manual_image_confirmed,40000,120000,2025-01-24 3차 image: M 프리미엄 11GB 내국인 010신규/MNP
+270,sk7,7GB,manual_image_confirmed,90000,100000,2025-01-24 3차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+270,sk7,11GB,manual_image_confirmed,50000,140000,2025-01-24 3차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+270,umobile,7GB,manual_image_confirmed,44000,121000,2025-01-24 3차 image: LTE USIM 7GB+ 내국인 010신규/MNP
+270,umobile,11GB,manual_image_confirmed,44000,143000,2025-01-24 3차 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+271,ktm,7GB,manual_image_confirmed,40000,100000,2025-01-24 3-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+271,ktm,11GB,manual_image_confirmed,40000,120000,2025-01-24 3-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+271,sk7,7GB,manual_image_confirmed,50000,120000,2025-01-24 3-1차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+271,sk7,11GB,manual_image_confirmed,50000,140000,2025-01-24 3-1차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+271,umobile,7GB,manual_image_confirmed,44000,121000,2025-01-24 3-1차 image: LTE USIM 7GB+ 내국인 010신규/MNP
+271,umobile,11GB,manual_image_confirmed,44000,143000,2025-01-24 3-1차 image: LTE USIM 스페셜 11GB+일2GB 내국인 010신규/MNP
+272,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-01 1차 image: M 스페셜 7GB 내국인 010신규/MNP
+272,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-01 1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+274,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-05 1-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+274,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-05 1-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+274,sk7,7GB,manual_image_confirmed,60000,110000,2025-02-05 1-1차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+274,sk7,11GB,manual_image_confirmed,60000,130000,2025-02-05 1-1차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+275,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-07 2차 image: M 스페셜 7GB 내국인 010신규/MNP
+275,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-07 2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+275,sk7,7GB,manual_image_confirmed,60000,120000,2025-02-07 2차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+275,sk7,11GB,manual_image_confirmed,60000,140000,2025-02-07 2차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+276,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-08 2-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+276,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-08 2-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+277,hello,7GB,manual_image_confirmed,30000,130000,2025-02-18 3차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+277,hello,11GB,manual_image_confirmed,30000,110000,2025-02-18 3차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+277,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-18 3차 image: M 스페셜 7GB 내국인 010신규/MNP
+277,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-18 3차 image: M 프리미엄 11GB 내국인 010신규/MNP
+278,hello,7GB,manual_image_confirmed,30000,130000,2025-02-19 3-1차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+278,hello,11GB,manual_image_confirmed,30000,110000,2025-02-19 3-1차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+278,ktm,7GB,manual_image_confirmed,40000,100000,2025-02-19 3-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+278,ktm,11GB,manual_image_confirmed,40000,120000,2025-02-19 3-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+279,ktm,7GB,manual_image_confirmed,40000,90000,2025-03-01 1차 image: M 스페셜 7GB 내국인 010신규/MNP
+279,ktm,11GB,manual_image_confirmed,40000,110000,2025-03-01 1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+280,ktm,7GB,manual_image_confirmed,40000,90000,2025-03-03 1-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+280,ktm,11GB,manual_image_confirmed,40000,110000,2025-03-03 1-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+282,ktm,7GB,manual_image_confirmed,40000,90000,2025-03-05 1-2차 image: M 스페셜 7GB 내국인 010신규/MNP
+282,ktm,11GB,manual_image_confirmed,40000,110000,2025-03-05 1-2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+283,ktm,7GB,manual_image_confirmed,40000,90000,2025-03-06 1-3차 image: M 스페셜 7GB 내국인 010신규/MNP
+283,ktm,11GB,manual_image_confirmed,40000,110000,2025-03-06 1-3차 image: M 프리미엄 11GB 내국인 010신규/MNP
+286,sk7,7GB,manual_image_confirmed,50000,80000,2025-03-21 1-6차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+286,sk7,11GB,manual_image_confirmed,50000,100000,2025-03-21 1-6차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+287,hello,7GB,manual_image_confirmed,30000,110000,2025-03-22 1-7차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+287,hello,11GB,manual_image_confirmed,30000,110000,2025-03-22 1-7차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+287,sk7,7GB,manual_image_confirmed,50000,80000,2025-03-22 1-7차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+287,sk7,11GB,manual_image_confirmed,50000,100000,2025-03-22 1-7차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+288,hello,7GB,manual_image_confirmed,30000,110000,2025-03-28 1-8차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+288,hello,11GB,manual_image_confirmed,30000,110000,2025-03-28 1-8차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+289,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-01 1차 image: M 스페셜 7GB 내국인 010신규/MNP
+289,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-01 1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+292,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-03 2차 image: M 스페셜 7GB 내국인 010신규/MNP
+292,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-03 2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+293,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-04 2-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+293,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-04 2-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+293,umobile,7GB,manual_image_confirmed,55000,100000,2025-04-04 2-1차 image: LTE 7GB+ 내국인 010신규/MNP
+293,umobile,11GB,manual_image_confirmed,55000,120000,2025-04-04 2-1차 image: LTE 스페셜 11GB+일2GB 내국인 010신규/MNP
+299,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-08 2-2차 image: M 스페셜 7GB 내국인 010신규/MNP
+299,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-08 2-2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+299,umobile,7GB,manual_image_confirmed,55000,100000,2025-04-08 2-2차 image: LTE 7GB+ 내국인 010신규/MNP
+299,umobile,11GB,manual_image_confirmed,55000,110000,2025-04-08 2-2차 image: LTE 스페셜 11GB+일2GB 내국인 010신규/MNP
+300,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-09 2-3차 image: M 스페셜 7GB 내국인 010신규/MNP
+300,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-09 2-3차 image: M 프리미엄 11GB 내국인 010신규/MNP
+300,umobile,7GB,manual_image_confirmed,55000,100000,2025-04-09 2-3차 image: LTE 7GB+ 내국인 010신규/MNP
+300,umobile,11GB,manual_image_confirmed,55000,110000,2025-04-09 2-3차 image: LTE 스페셜 11GB+일2GB 내국인 010신규/MNP
+301,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-12 2-4차 image: M 스페셜 7GB 내국인 010신규/MNP
+301,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-12 2-4차 image: M 프리미엄 11GB 내국인 010신규/MNP
+301,umobile,7GB,manual_image_confirmed,55000,100000,2025-04-12 2-4차 image: LTE 7GB+ 내국인 010신규/MNP
+301,umobile,11GB,manual_image_confirmed,55000,110000,2025-04-12 2-4차 image: LTE 스페셜 11GB+일2GB 내국인 010신규/MNP
+302,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-15 2-5차 image: M 스페셜 7GB 내국인 010신규/MNP
+302,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-15 2-5차 image: M 프리미엄 11GB 내국인 010신규/MNP
+302,umobile,7GB,manual_image_confirmed,55000,100000,2025-04-15 2-5차 image: LTE 7GB+ 내국인 010신규/MNP
+302,umobile,11GB,manual_image_confirmed,55000,110000,2025-04-15 2-5차 image: LTE 스페셜 11GB+일2GB 내국인 010신규/MNP
+303,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-18 2-6차 image: M 스페셜 7GB 내국인 010신규/MNP
+303,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-18 2-6차 image: M 프리미엄 11GB 내국인 010신규/MNP
+304,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-23 2-7차 image: M 스페셜 7GB 내국인 010신규/MNP
+304,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-23 2-7차 image: M 프리미엄 11GB 내국인 010신규/MNP
+305,ktm,7GB,manual_image_confirmed,40000,80000,2025-04-26 2-8차 image: M 스페셜 7GB 내국인 010신규/MNP
+305,ktm,11GB,manual_image_confirmed,40000,90000,2025-04-26 2-8차 image: M 프리미엄 11GB 내국인 010신규/MNP
+306,ktm,7GB,manual_image_confirmed,40000,60000,2025-05-01 1차 image: M 스페셜 7GB 내국인 010신규/MNP
+306,ktm,11GB,manual_image_confirmed,40000,80000,2025-05-01 1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+307,ktm,7GB,manual_image_confirmed,40000,60000,2025-05-03 1-1차 image: M 스페셜 7GB 내국인 010신규/MNP
+307,ktm,11GB,manual_image_confirmed,40000,80000,2025-05-03 1-1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+307,umobile,7GB,manual_image_confirmed,55000,90000,2025-05-03 1-1차 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+307,umobile,11GB,manual_image_confirmed,55000,100000,2025-05-03 1-1차 image: LTE 스페셜/이동의즐거움 11GB+ 계열 내국인 010신규/MNP
+315,hello,7GB,manual_image_confirmed,30000,120000,2025-06-13 1-4차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+315,hello,11GB,manual_image_confirmed,30000,100000,2025-06-13 1-4차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+316,hello,7GB,manual_image_confirmed,30000,120000,2025-06-13 1-4차 수정 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+316,hello,11GB,manual_image_confirmed,30000,100000,2025-06-13 1-4차 수정 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+316,umobile,7GB,manual_image_confirmed,55000,110000,2025-06-13 1-4차 수정 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+316,umobile,11GB,manual_image_confirmed,55000,110000,2025-06-13 1-4차 수정 image: LTE 스페셜/이동의즐거움 11GB+ 계열 내국인 010신규/MNP
+317,hello,7GB,manual_image_confirmed,30000,120000,2025-06-18 1-5차 image: DATA 걱정없는 유심 7GB 내국인 010신규/MNP
+317,hello,11GB,manual_image_confirmed,30000,100000,2025-06-18 1-5차 image: THE 착한 데이터 유심 11GB 내국인 010신규/MNP
+321,hello,7GB,manual_image_confirmed,30000,120000,2025-07-01 1차 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+321,hello,11GB,manual_image_confirmed,30000,120000,2025-07-01 1차 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+321,ktm,7GB,manual_image_confirmed,50000,100000,2025-07-01 1차 image: M 스페셜 7GB 내국인 010신규/MNP
+321,ktm,11GB,manual_image_confirmed,50000,110000,2025-07-01 1차 image: M 프리미엄 11GB 내국인 010신규/MNP
+323,hello,7GB,manual_image_confirmed,30000,120000,2025-07-02 1-1차 최종 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+323,hello,11GB,manual_image_confirmed,30000,120000,2025-07-02 1-1차 최종 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+323,ktm,7GB,manual_image_confirmed,50000,100000,2025-07-02 1-1차 최종 image: M 스페셜 7GB 내국인 010신규/MNP
+323,ktm,11GB,manual_image_confirmed,50000,110000,2025-07-02 1-1차 최종 image: M 프리미엄 11GB 내국인 010신규/MNP
+324,hello,7GB,manual_image_confirmed,30000,120000,2025-07-03 1-2차 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+324,hello,11GB,manual_image_confirmed,30000,120000,2025-07-03 1-2차 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+324,ktm,7GB,manual_image_confirmed,50000,100000,2025-07-03 1-2차 image: M 스페셜 7GB 내국인 010신규/MNP
+324,ktm,11GB,manual_image_confirmed,50000,110000,2025-07-03 1-2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+326,hello,7GB,manual_image_confirmed,30000,120000,2025-07-03 2차 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+326,hello,11GB,manual_image_confirmed,30000,120000,2025-07-03 2차 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+326,ktm,7GB,manual_image_confirmed,50000,100000,2025-07-03 2차 image: M 스페셜 7GB 내국인 010신규/MNP
+326,ktm,11GB,manual_image_confirmed,50000,110000,2025-07-03 2차 image: M 프리미엄 11GB 내국인 010신규/MNP
+327,hello,7GB,manual_image_confirmed,30000,120000,2025-07-04 3차 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+327,hello,11GB,manual_image_confirmed,30000,120000,2025-07-04 3차 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+335,ktm,7GB,manual_image_confirmed,70000,120000,2025-08-01 1차 image: M 스페셜 7GB 내국인 010신규/번호이동 직접
+335,ktm,11GB,manual_image_confirmed,70000,130000,2025-08-01 1차 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접
+336,ktm,7GB,manual_image_confirmed,70000,120000,2025-08-02 2차 image: M 스페셜 7GB 내국인 010신규/번호이동 직접
+336,ktm,11GB,manual_image_confirmed,70000,130000,2025-08-02 2차 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접
+339,ktm,7GB,manual_image_confirmed,70000,120000,2025-08-07 3차 image: M 스페셜 7GB 내국인 010신규/번호이동 직접
+339,ktm,11GB,manual_image_confirmed,70000,130000,2025-08-07 3차 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접
+340,ktm,7GB,manual_image_confirmed,70000,120000,2025-08-13 4차 image: M 스페셜 7GB 내국인 010신규/번호이동 직접
+340,ktm,11GB,manual_image_confirmed,70000,130000,2025-08-13 4차 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접
+341,ktm,7GB,manual_image_confirmed,70000,120000,2025-08-14 5차 image: M 스페셜 7GB 내국인 010신규/번호이동 직접
+341,ktm,11GB,manual_image_confirmed,70000,130000,2025-08-14 5차 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접
+344,sk7,7GB,manual_image_confirmed,80000,150000,2025-08-21 7차 수정 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+344,sk7,11GB,manual_image_confirmed,80000,160000,2025-08-21 7차 수정 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+345,sk7,7GB,manual_image_confirmed,80000,150000,2025-08-22 8차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+345,sk7,11GB,manual_image_confirmed,80000,160000,2025-08-22 8차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+352,umobile,7GB,manual_image_confirmed,70000,100000,2025-09-04 3차 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+352,umobile,11GB,manual_image_confirmed,70000,110000,2025-09-04 3차 image: LTE 스페셜/이동의즐거움 11GB+ 계열 내국인 010신규/MNP
+360,ktm,7GB,manual_image_confirmed,90000,160000,2025-09-19 8차 image: M 스페셜 7GB 플러스 내국인 010신규 캐치콜/번호이동 캐치콜
+360,ktm,11GB,manual_image_confirmed,90000,170000,2025-09-19 8차 image: M 프리미엄 11GB 내국인 010신규 캐치콜/번호이동 캐치콜
+361,ktm,7GB,manual_image_confirmed,90000,160000,2025-09-19 9차 image: M 스페셜 7GB 플러스 내국인 010신규 캐치콜/번호이동 캐치콜
+361,ktm,11GB,manual_image_confirmed,90000,170000,2025-09-19 9차 image: M 프리미엄 11GB 내국인 010신규 캐치콜/번호이동 캐치콜
+363,hello,7GB,manual_image_confirmed,30000,110000,2025-09-23 11차 image: DATA 걱정없는/데이터 더주는 유심 7GB 내국인 010신규/MNP
+363,hello,11GB,manual_image_confirmed,30000,110000,2025-09-23 11차 image: THE 착한 데이터/데이터 더주는 유심 11GB 내국인 010신규/MNP
+367,skylife,7GB,manual_image_confirmed,65000,180000,2025-09-30 15차 image: SKY 모두 충분 7GB+ 내국인 010신규/MNP
+367,skylife,11GB,manual_image_confirmed,75000,190000,2025-09-30 15차 image: SKY 모두 충분 11GB+ 내국인 010신규/MNP
+380,sk7,7GB,manual_image_confirmed,80000,90000,2025-10-30 10차 image: LTE 알뜰 7GB+ 내국인 010신규/MNP
+380,sk7,11GB,manual_image_confirmed,80000,100000,2025-10-30 10차 image: LTE 알뜰 11GB+ 내국인 010신규/MNP
+397,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+397,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+398,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+398,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+399,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+399,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+400,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+400,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+401,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+401,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+402,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+402,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+403,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+403,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+404,ktm,7GB,manual_image_confirmed,70000,100000,2025-12-10 image: M 스페셜 7GB 플러스 내국인 010신규/번호이동 직접 판독
+404,ktm,11GB,manual_image_confirmed,70000,110000,2025-12-10 image: M 프리미엄 11GB 내국인 010신규/번호이동 직접 판독
+414,umobile,7GB,manual_image_confirmed,55000,121000,2026-01-14 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+414,umobile,11GB,manual_image_confirmed,55000,132000,2026-01-14 image: LTE 스페셜 / 이동의즐거움 K-패스 71GB+ 내국인 010신규/MNP
+415,umobile,7GB,manual_image_confirmed,55000,121000,2026-01-14 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+415,umobile,11GB,manual_image_confirmed,55000,132000,2026-01-14 image: LTE 스페셜 / 이동의즐거움 K-패스 71GB+ 내국인 010신규/MNP
+416,umobile,7GB,manual_image_confirmed,55000,121000,2026-01-14 image: LTE 7GB+ / 이동의즐거움 K-패스 7GB+ 내국인 010신규/MNP
+416,umobile,11GB,manual_image_confirmed,55000,132000,2026-01-14 image: LTE 스페셜 / 이동의즐거움 K-패스 71GB+ 내국인 010신규/MNP
+462,ktm,7GB,manual_image_confirmed,105000,90000,2026-04-01 image: M 스페셜 7GB(밀리의서재) 내국인 010신규/번호이동 직접 판독
+462,ktm,11GB,manual_image_confirmed,105000,100000,2026-04-01 image: M 프리미엄 11GB(밀리의서재) 내국인 010신규/번호이동 직접 판독
