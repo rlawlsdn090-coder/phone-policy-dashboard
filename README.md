@@ -48,7 +48,7 @@ python3 scripts/policy_tracker.py priority-review
 
 ## 자동화
 
-Codex heartbeat 자동화 `automation`이 매일 11:00 KST에 `daily-update`를 실행하도록 설정되어 있습니다.
+Codex heartbeat 자동화 `automation`이 매일 11:00 KST에 `daily-update`를 실행하도록 설정되어 있습니다. 정책 데이터나 대시보드 산출물이 바뀌면 GitHub Pages 공개 사이트도 자동으로 갱신합니다.
 
 ## GitHub Pages 배포
 
@@ -57,10 +57,5 @@ GitHub Pages 공개용 파일은 `docs/` 폴더에 모아둡니다. GitHub 저�
 공개용 대시보드를 최신 상태로 다시 만들 때는 아래 순서로 실행합니다.
 
 ```bash
-python3 scripts/policy_tracker.py dashboard
-mkdir -p docs/data/exports
-cp dashboard/index.html docs/index.html
-cp data/exports/*.csv data/exports/status_report.md docs/data/exports/
-touch docs/.nojekyll
-perl -0pi -e 's/href="priority_review\.html"/href="data\/exports\/review_priority.csv"/g; s/href="review\.html"/href="data\/exports\/review_values.csv"/g; s/href="..\/data\/exports\/policy_values_daily.csv"/href="data\/exports\/policy_values_daily.csv"/g' docs/index.html
+scripts/publish_pages.sh
 ```
