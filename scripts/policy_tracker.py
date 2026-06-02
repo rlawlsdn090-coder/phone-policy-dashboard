@@ -35,7 +35,7 @@ TARGET_CARRIERS = {
     "hello": ["헬로", "Hello"],
     "ktm": ["KTM", "kt M mobile", "M mobile"],
     "skylife": ["스카이", "skylife"],
-    "sk7": ["SK7", "SK 7", "7mobile"],
+    "sk7": ["SK7", "SK 7", "7mobile", "세븐", "세븐모바일", "SK세븐", "SK 세븐", "7모바일"],
 }
 
 EXCLUDE_NAMES = ["이야기"]
