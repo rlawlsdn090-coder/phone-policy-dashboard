@@ -16,6 +16,21 @@
 python3 scripts/policy_tracker.py daily-update --since 2025-01-01 --extract-limit 50
 ```
 
+## 카카오톡 정책 이미지 가져오기
+
+카카오톡에서 저장한 정책 이미지는 로컬 정책글처럼 누적할 수 있습니다. 원본 이미지는 `inbox/`와 `data/images/`에만 두고 GitHub Pages에는 올리지 않습니다.
+
+```bash
+mkdir -p inbox/kakao
+python3 scripts/policy_tracker.py import-local-images inbox/kakao --source kakao --subject "카카오톡 정책 이미지" --write-date "2026-06-04 11:00:00"
+python3 scripts/policy_tracker.py extract --limit 50 --missing-only
+python3 scripts/policy_tracker.py dashboard
+python3 scripts/policy_tracker.py export-csv
+scripts/publish_pages.sh
+```
+
+카카오톡 앱 자체를 자동 조작해 이미지를 저장하려면 macOS `개인정보 보호 및 보안 > 손쉬운 사용`에서 Codex/터미널/osascript가 카카오톡을 제어할 수 있도록 허용해야 합니다. 카카오톡 내부 캐시 이미지는 암호화되어 있으므로, 앱에서 저장된 원본 이미지 또는 열린 이미지 뷰어를 통해 가져오는 방식이 필요합니다.
+
 ## 주요 산출물
 
 - `dashboard/index.html`: 일별/월별 그래프 대시보드

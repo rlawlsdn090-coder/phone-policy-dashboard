@@ -25,6 +25,7 @@ REVIEW_PATH = ROOT / "dashboard" / "review.html"
 CANDIDATE_REVIEW_PATH = ROOT / "dashboard" / "candidate_review.html"
 PRIORITY_REVIEW_PATH = ROOT / "dashboard" / "priority_review.html"
 EXPORT_DIR = DATA_DIR / "exports"
+INBOX_DIR = ROOT / "inbox"
 
 CAFE_ID = "30984571"
 MENU_ID = "10"
@@ -39,6 +40,7 @@ TARGET_CARRIERS = {
 }
 
 EXCLUDE_NAMES = ["이야기"]
+LOCAL_IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".heic", ".tif", ".tiff", ".bmp"}
 
 
 def connect():
@@ -169,6 +171,20 @@ def parse_since(value):
     return datetime.strptime(value, "%Y-%m-%d").replace(tzinfo=KST)
 
 
+def parse_local_write_date(value):
+    if not value:
+        return datetime.now(KST)
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+        try:
+            dt = datetime.strptime(value, fmt)
+            if fmt == "%Y-%m-%d":
+                dt = dt.replace(hour=12)
+            return dt.replace(tzinfo=KST)
+        except ValueError:
+            pass
+    raise SystemExit("--write-date must be YYYY-MM-DD or YYYY-MM-DD HH:MM:SS")
+
+
 def is_policy_subject(subject):
     return "케이엘모바일_부성정책" in subject and "정책" in subject
 
@@ -219,6 +235,130 @@ def download(url, dest):
     )
     with urllib.request.urlopen(req, timeout=60) as resp:
         dest.write_bytes(resp.read())
+
+
+def local_article_id(source, subject, write_dt):
+    stamp = write_dt.strftime("%Y%m%d%H%M%S")
+    seed = sum(ord(ch) for ch in f"{source}:{subject}") % 1000
+    return int(f"70{stamp}{seed:03d}")
+
+
+def iter_local_image_files(path):
+    path = Path(path).expanduser()
+    if path.is_file():
+        return [path] if path.suffix.lower() in LOCAL_IMAGE_EXTENSIONS else []
+    if not path.exists():
+        raise SystemExit(f"image path not found: {path}")
+    return sorted(
+        file
+        for file in path.rglob("*")
+        if file.is_file() and file.suffix.lower() in LOCAL_IMAGE_EXTENSIONS
+    )
+
+
+def guess_carrier_from_file(path, allow_ocr=True):
+    carrier = guess_carrier(path.name, str(path))
+    if carrier or not allow_ocr:
+        return carrier
+    try:
+        text = "\n".join(run_text_lines(path, psm="6", timeout=8))
+    except Exception:
+        return None
+    return guess_carrier(path.name, text)
+
+
+def import_local_images(args):
+    init_db()
+    source = re.sub(r"[^a-zA-Z0-9_-]+", "-", args.source or "local").strip("-").lower() or "local"
+    write_dt = parse_local_write_date(args.write_date)
+    write_date = write_dt.strftime("%Y-%m-%d %H:%M:%S")
+    subject = args.subject or f"{source.upper()} 정책 이미지 {write_date}"
+    article_id = args.article_id or local_article_id(source, subject, write_dt)
+    now = datetime.now(KST).isoformat()
+    files = iter_local_image_files(args.path)
+    if not files:
+        raise SystemExit(f"no supported image files found: {args.path}")
+
+    imported = 0
+    skipped = []
+    carrier_counts = {}
+    with connect() as db:
+        db.execute(
+            """
+            insert into posts(article_id, subject, write_ts, write_date, summary, url, raw_json, collected_at)
+            values (?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(article_id) do update set
+              subject=excluded.subject,
+              write_ts=excluded.write_ts,
+              write_date=excluded.write_date,
+              summary=excluded.summary,
+              raw_json=excluded.raw_json,
+              collected_at=excluded.collected_at
+            """,
+            (
+                article_id,
+                subject,
+                int(write_dt.timestamp() * 1000),
+                write_date,
+                f"{source} local image import",
+                f"local://{source}/{article_id}",
+                json.dumps({"source": source, "path": str(Path(args.path).expanduser())}, ensure_ascii=False),
+                now,
+            ),
+        )
+
+        for file in files:
+            if any(name in file.name for name in EXCLUDE_NAMES):
+                skipped.append((file, "excluded"))
+                continue
+            carrier = guess_carrier_from_file(file, allow_ocr=args.ocr_carrier)
+            if not carrier:
+                skipped.append((file, "unknown_carrier"))
+                continue
+            carrier_counts[carrier] = carrier_counts.get(carrier, 0) + 1
+            suffix = file.suffix.lower()
+            stem = carrier if carrier_counts[carrier] == 1 else f"{carrier}_{carrier_counts[carrier]}"
+            local = IMAGE_DIR / str(article_id) / f"{stem}{suffix}"
+            local.parent.mkdir(parents=True, exist_ok=True)
+            if args.force or not local.exists():
+                shutil.copy2(file, local)
+            image_url = f"local://{source}/{article_id}/{file.name}"
+            db.execute(
+                """
+                insert into images(article_id, carrier, original_name, url, local_path, created_at)
+                values (?, ?, ?, ?, ?, ?)
+                on conflict(url) do update set
+                  carrier=excluded.carrier,
+                  original_name=excluded.original_name,
+                  local_path=excluded.local_path,
+                  extract_status='pending'
+                """,
+                (article_id, carrier, file.name, image_url, str(local), now),
+            )
+            imported += 1
+
+        db.execute(
+            "insert into run_log(command, details, created_at) values (?, ?, ?)",
+            (
+                "import-local-images",
+                json.dumps(
+                    {
+                        "source": source,
+                        "article_id": article_id,
+                        "subject": subject,
+                        "write_date": write_date,
+                        "imported": imported,
+                        "skipped": [(str(path), reason) for path, reason in skipped],
+                    },
+                    ensure_ascii=False,
+                ),
+                now,
+            ),
+        )
+        db.commit()
+    print(f"local images imported={imported}, skipped={len(skipped)}, article_id={article_id}")
+    for file, reason in skipped[:20]:
+        print(f"skipped {reason}: {file}")
 
 
 def collect(args):
@@ -2469,6 +2609,15 @@ def main():
     p = sub.add_parser("import-summary-manual")
     p.add_argument("path")
     p.set_defaults(func=import_summary_manual)
+    p = sub.add_parser("import-local-images")
+    p.add_argument("path")
+    p.add_argument("--source", default="kakao")
+    p.add_argument("--subject")
+    p.add_argument("--write-date")
+    p.add_argument("--article-id", type=int)
+    p.add_argument("--ocr-carrier", action=argparse.BooleanOptionalAction, default=True)
+    p.add_argument("--force", action="store_true")
+    p.set_defaults(func=import_local_images)
     sub.add_parser("status").set_defaults(func=status)
     args = parser.parse_args()
     args.func(args)
