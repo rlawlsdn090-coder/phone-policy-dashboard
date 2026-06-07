@@ -20,6 +20,16 @@ python3 scripts/policy_tracker.py daily-update --since 2025-01-01 --extract-limi
 
 카카오톡에서 저장한 정책 이미지는 로컬 정책글처럼 누적할 수 있습니다. 원본 이미지는 `inbox/`와 `data/images/`에만 두고 GitHub Pages에는 올리지 않습니다.
 
+먼저 수집 가능 상태를 확인합니다. 이 명령은 채팅 내용을 읽지 않고 Mac 잠금 상태, 오늘 다운로드된 카카오톡 사진, 카카오톡 로컬 이미지 캐시의 새 후보만 점검합니다.
+
+```bash
+python3 scripts/kakao_collect_status.py --date 2026-06-07
+```
+
+`suggested_status`가 `mac_locked_do_not_claim_no_change`이면 카카오톡 서랍을 직접 확인하지 못한 상태입니다. 이때는 `새 이미지 없음`이나 `변동 없음`으로 단정하지 말고 `카카오톡 직접 확인 불가 / 확인 필요`로 보고합니다.
+
+`suggested_status`가 `encrypted_cache_candidates_need_original_download`이면 카카오톡 내부에는 새 이미지 후보가 생겼지만 원본 PNG/JPG가 아직 저장되지 않은 상태입니다. 카카오톡 앱에서 대상 정책방의 사진/동영상 서랍을 열어 원본 이미지를 다운로드한 뒤 아래 import 과정을 진행합니다.
+
 ```bash
 mkdir -p inbox/kakao
 python3 scripts/policy_tracker.py import-local-images inbox/kakao --source kakao --subject "카카오톡 정책 이미지" --write-date "2026-06-04 11:00:00"
@@ -30,6 +40,8 @@ scripts/publish_pages.sh
 ```
 
 카카오톡 앱 자체를 자동 조작해 이미지를 저장하려면 macOS `개인정보 보호 및 보안 > 손쉬운 사용`에서 Codex/터미널/osascript가 카카오톡을 제어할 수 있도록 허용해야 합니다. 카카오톡 내부 캐시 이미지는 암호화되어 있으므로, 앱에서 저장된 원본 이미지 또는 열린 이미지 뷰어를 통해 가져오는 방식이 필요합니다.
+
+Mac 잠금 비밀번호, Touch ID, Apple Watch 인증은 Codex가 대신 처리할 수 없습니다. 매일 자동화 시점에 Mac이 잠겨 있으면 수집은 보류하고 확인 필요로 보고해야 합니다.
 
 ## 주요 산출물
 
